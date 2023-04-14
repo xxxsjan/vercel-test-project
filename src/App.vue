@@ -41,7 +41,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="as">阿松</div>
+  <div id="as">哎哟</div>
   <div id="ngm" @click="onClick">你干嘛</div>
   <div class="music_switch">
     <span class="s1"></span>
