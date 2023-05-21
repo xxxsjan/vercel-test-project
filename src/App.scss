@@ -1,0 +1,94 @@
+.keyContainer {
+  color: white;
+  font-size: 10em;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.leave {
+  animation-name: leave;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes leave {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+/* .keyContainer div.leave {
+    opacity: 0;
+    transform: translateY(-100px);
+  } */
+
+#as {
+  font-size: 50px;
+  display: inline-block;
+  color: #fff;
+}
+#ngm {
+  font-size: 50px;
+  display: inline-block;
+  color: #fff;
+}
+.music_switch {
+  position: fixed;
+  width: 40px;
+  height: 30px;
+  top: 48px;
+  right: 62px;
+  cursor: pointer;
+  z-index: 10;
+}
+.music_switch span {
+  position: absolute;
+  width: 4px;
+  bottom: 0;
+  background: #fff;
+}
+.music_switch .s1 {
+  height: 11px;
+  right: 0px;
+}
+.music_switch .s2 {
+  height: 21px;
+  right: 10px;
+}
+.music_switch .s3 {
+  height: 28px;
+  right: 20px;
+}
+.music_switch .s4 {
+  height: 13px;
+  right: 30px;
+}
+.music_switch.active .s1 {
+  animation: wave 0.66s linear infinite;
+  -webkit-animation: wave 0.66s linear infinite;
+  -ms-animation: wave 0.66s linear infinite;
+}
+.music_switch.active .s2 {
+  animation: wave 0.8s linear infinite;
+}
+.music_switch.active .s3 {
+  animation: wave 0.7s linear infinite;
+}
+.music_switch.active .s4 {
+  animation: wave 0.5s linear infinite;
+}
+@keyframes wave {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 28px;
+  }
+  100% {
+    height: 10px;
+  }
+}
