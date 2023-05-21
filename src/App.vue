@@ -59,7 +59,6 @@ function createKeyTextDom(text) {
   const _div = document.createElement("div");
   _div.innerHTML = text;
   _div.addEventListener("animationend", () => {
-    console.log("Animation ended", text);
     document.querySelector(".keyContainer").removeChild(_div);
   });
   document.querySelector(".keyContainer").appendChild(_div);
